@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-font-color: black;
+  --primary-theme-color: purple;
+  --primary-font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  padding-top: 3vh;
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  font-family: var(--primary-font-family);
+  justify-content: space-between;
+}
+.header-container .header-logo-container {
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header-container .header-logo {
+  font-size: 3.5rem;
+  color: var(--primary-font-color);
+}
+.header-container .newext-x {
+  font-size: 3rem;
+  color: var(--primary-theme-color);
+}
+.header-container .search-and-account-container {
+  display: flex;
+}
+.header-container .search-bar-container {
+  margin-right: 2vw;
+}
+.header-container form.search-bar input[type=text] {
+  font-size: 2rem;
+  border: 1px solid grey;
+  width: 20vw;
+  height: 3.7rem;
+  background: #f1f1f1;
+  border-radius: 2rem;
+  padding-left: 3rem;
+  outline: none;
+  border-color: rgb(218, 214, 214);
+}
+.header-container form.search-bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header-container input::-moz-placeholder {
+  color: var(--primary-theme-color);
+  opacity: 0.5;
+}
+.header-container input:-ms-input-placeholder {
+  color: var(--primary-theme-color);
+  opacity: 0.5;
+}
+.header-container input::placeholder {
+  color: var(--primary-theme-color);
+  opacity: 0.5;
+}
+.header-container form {
+  position: relative;
+}
+.header-container .search-bar-container i {
+  font-size: 2rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  padding-right: 2rem;
+  color: var(--primary-theme-color);
+  opacity: 0.5;
+}
+.header-container .my-account {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+}/*# sourceMappingURL=header.css.map */
