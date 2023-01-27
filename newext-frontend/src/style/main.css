@@ -1,6 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-navbar {
+  padding: 2rem 7.5rem 0rem 7.5rem;
+}
+
+.section-hero {
+  padding: 1.5rem 7.5rem;
+  display: flex;
+  gap: 2.4rem;
+}
+.section-hero .section-hero--right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-navbar .navbar-content {
+  width: 100%;
+  gap: 0.75rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 0.2rem;
+}
+.container-navbar .navbar-content::-webkit-scrollbar {
+  display: none;
+}
+.container-navbar .navbar-content .nav-btn {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: none;
+  flex-wrap: nowrap;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  color: #1B1425;
+  background-color: #CABAE2;
+  opacity: 0.8;
+}
+.container-navbar .navbar-content .nav-btn:hover, .container-navbar .navbar-content .nav-btn:active {
+  background-color: #DFCEFA;
+  border-bottom: 3px solid #6B3FAD;
+  padding: 0.6rem 1rem;
+}
+.container-navbar .nav-btn--prev, .container-navbar .nav-btn--next {
+  border: none;
+  width: 60px;
+  height: 2.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: transparent;
+}
+.container-navbar .nav-btn--prev .nav-btn--prev---icon, .container-navbar .nav-btn--prev .nav-btn--next---icon, .container-navbar .nav-btn--next .nav-btn--prev---icon, .container-navbar .nav-btn--next .nav-btn--next---icon {
+  width: 1.7rem;
+  height: 20px;
+  color: #1B1425;
+}
+
+.carousel {
+  width: 53rem;
+  height: 31.5rem;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0rem 0.35rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  height: 52.5%;
+  align-items: flex-end;
+}
+.carousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  text-align: left;
+  left: 5%;
+  z-index: 200;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 1.8rem;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3rem;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.carousel .carousel-indicators {
+  display: none;
+}
+.carousel .carousel-gradient-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  height: 30vh;
+  width: 100%;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-image: linear-gradient(to top, rgb(202, 186, 226) 2%, transparent);
+}
+
+.container-weatherloc {
+  max-width: 19rem;
+  height: 8.3rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 207, 38, 0.5);
+  box-shadow: 1rem solid #FFCF26;
+}
+.container-weatherloc h6 {
+  width: 12rem;
+  height: 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #FFF;
+  margin-right: auto;
+}
+.container-weatherloc .layout-flex {
+  display: flex;
+}
+.container-weatherloc .layout-flex--direction {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.75rem;
+}
+.container-weatherloc .weatherloc {
+  padding: 1.25rem 1rem;
+}
+.container-weatherloc .weatherloc-temperature {
+  width: 3.3rem;
+  height: 2.75rem;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-right: 0.6rem;
+  margin-top: 1.2rem;
+}
+.container-weatherloc .weatherloc-weather {
+  width: 2.4rem;
+  height: 1rem;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  padding-top: 1rem;
+}
+.container-weatherloc .weatherloc-daydate {
+  width: 4.6rem;
+  height: 0.75rem;
+  color: #FFF;
+  font-weight: 500;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+.container-weatherloc .weatherloc-icon--weather {
+  height: 4.4rem;
+  width: 4.4rem;
+  color: #F5C61E;
+  margin-left: 3.5rem;
+}
+.container-weatherloc .weatherloc-icon--more {
+  height: 1rem;
+  width: 1rem;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.stockmarket {
+  width: 19rem;
+  max-height: 21.625rem;
+  background: rgba(202, 186, 226, 0.2);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  padding: 1.125rem 0.875rem 1.625rem 0.875rem;
+}
+
+.stockmarket-header {
+  border-bottom: 0.5px solid rgba(202, 186, 226, 0.4);
+  padding-bottom: 0.7rem;
+}
+
+.stockmarket-headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stockmarket-headline h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #1b1425;
+  margin-bottom: 0;
+}
+
+.stockmarket-headline p {
+  margin-bottom: 0;
+}
+
+.stockmarket-heading--arrow {
+  max-width: 1rem;
+  max-height: 1rem;
+}
+
+/* Stock Market Tabs CSS */
+.tabs-container {
+  width: 17.06rem;
+  height: 15.7rem;
+  margin: 1.3rem 0.125rem 0 0.125rem;
+}
+
+.stockmarket-tabs--content {
+  display: flex;
+  justify-content: space-between;
+  height: 2.06rem;
+  margin-bottom: 1.3rem;
+}
+
+/* Stock Market Tabs left side content CSS */
+.stockmarket-tabs--left {
+  display: flex;
+}
+
+.stockmarket-tabs--logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 1.73rem;
+  border-radius: 0.44rem;
+  margin: 0.3rem 0.8rem 0 0;
+  background-color: #FFF;
+}
+
+.stockmarket-tabs--name {
+  display: flex;
+  flex-direction: column;
+}
+
+.stockmarket-tabs--name h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #1b1425;
+  margin-bottom: 0;
+}
+
+.stockmarket-tabs--name p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  color: #1b1425;
+  opacity: 0.8;
+}
+
+/* Stock Market Tabs Right side content CSS */
+.stockmarket-tabs--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stockmarket-tabs--right p {
+  height: 1rem;
+  display: inline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.93rem;
+  margin-bottom: 0;
+}
+
+.stockmarket-tabs--right h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  color: #1b1425;
+}
+
+.stockmarket-tabs--right---upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stocks-increased-percentage {
+  color: #21bf3a;
+}
+
+.stocks-decrease-percentage {
+  color: #e3302d;
+}
+
+.percent-arrow {
+  max-width: 0.75rem;
+  max-height: 0.75rem;
+}
+
+.percent-arrow.stocks-increased-percentage {
+  transform: rotate(-90deg);
+}
+
+.percent-arrow.stocks-decrease-percentage {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
