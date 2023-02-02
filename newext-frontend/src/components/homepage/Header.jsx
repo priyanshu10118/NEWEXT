@@ -18,7 +18,7 @@ export default function Header()
                 onClick={() => {}}
               />
               <i 
-                className="fa fa-search" 
+                className="fa fa-search search-logo" 
                 onClick={() => {}}>
               </i>
             </form>

@@ -66,8 +66,7 @@
                     border: 1px solid black; 
                     border-left: none;
                     background-color: #6B3FAD;
-                    padding: .1rem .8rem;
-                    pointer-events: none;
+                    padding: .55rem .8rem;
                     color: #FFF; 
                     opacity: .5;
                     border-top-right-radius: .5rem;
@@ -75,12 +74,13 @@
                     display: flex;
                     align-items: center;
                     cursor: pointer;
+
+                    transition-duration: 500ms;
                 }
 
                 i:hover {
-                    color: red;
+                    background-color: #370a7a;
                 }
-                
 
                 input[type=text] {
                     font-size: 1rem;
@@ -114,6 +114,8 @@
             align-items: center;
             cursor: pointer;
             font-weight: 600;
+
+            transition-duration: 300ms;
         }
         
         .my-account:hover{

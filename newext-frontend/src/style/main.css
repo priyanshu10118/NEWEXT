@@ -51,8 +51,7 @@
   border: 1px solid black;
   border-left: none;
   background-color: #6B3FAD;
-  padding: 0.1rem 0.8rem;
-  pointer-events: none;
+  padding: 0.55rem 0.8rem;
   color: #FFF;
   opacity: 0.5;
   border-top-right-radius: 0.5rem;
@@ -60,9 +59,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition-duration: 500ms;
 }
 .header-container .search-and-account-container .search-bar-container form i:hover {
-  color: red;
+  background-color: #370a7a;
 }
 .header-container .search-and-account-container .search-bar-container form input[type=text] {
   font-size: 1rem;
@@ -101,6 +101,7 @@
   align-items: center;
   cursor: pointer;
   font-weight: 600;
+  transition-duration: 300ms;
 }
 .header-container .search-and-account-container .my-account:hover {
   color: #6B3FAD;
