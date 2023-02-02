@@ -62,16 +62,16 @@
                 display: flex;
 
                 i {
-                    font-size: 1.5rem;
-                    border: 2px solid grey; 
+                    font-size: 1.2rem;
+                    border: 1px solid black; 
                     border-left: none;
                     background-color: #6B3FAD;
                     padding: .1rem .8rem;
                     pointer-events: none;
                     color: #FFF; 
                     opacity: .5;
-                    border-top-right-radius: 2rem;
-                    border-bottom-right-radius: 2rem;
+                    border-top-right-radius: .5rem;
+                    border-bottom-right-radius: .5rem;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
@@ -84,11 +84,11 @@
 
                 input[type=text] {
                     font-size: 1rem;
-                    border: 1px solid rgb(218, 214, 214);
+                    border: 1px solid black; 
                     width: 18rem;
                     height: 2.4rem;
-                    border-top-left-radius: 2rem;
-                    border-bottom-left-radius: 2rem;
+                    border-top-left-radius: .5rem;
+                    border-bottom-left-radius: .5rem;
                     border-right: none;
                     padding-left: 1.5rem;
                     outline: none;
