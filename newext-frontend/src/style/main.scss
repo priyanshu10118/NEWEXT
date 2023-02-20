@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
 }
 
 //////////////////////////////////////////////////////////////
@@ -401,4 +402,312 @@
 
 .percent-arrow.stocks-decrease-percentage{
 	transform: rotate(90deg);
+}
+//////////////////////////////////////////////////////////////
+/// For-you
+/////////////////////////////////////////////////////////////
+.container-foryou{
+  width: 144rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.outer-container-foryou {
+    width: 100%;
+    @include display-flex(row);
+    margin:5rem 11.85rem 5rem 11.85rem;
+    .for-you {
+      width: 85.5rem;
+      height: 38rem;
+      .heading-foryou {
+        @include display-flex(row);
+        align-items: center;
+  
+        h2 {
+          width: 9.5rem;
+          height: 2.9rem;
+          @include font-Montserrat;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+          color: $homepage-headings-color;
+          margin-right: 1.252rem;
+        }
+      }
+      .inner-container-foryou {
+        margin-top: 2.4rem;
+        @include display-flex(column);
+        .inner-sub-container-foryou {
+          display: flex;
+          margin-bottom: 2.7rem;
+          .for-you-img1 {
+            width: 24.4rem;
+            height: 14rem;
+            background-image: url("../assets/Rectangle\ 15.png");
+          }
+          .for-you-img2 {
+            width: 24.4rem;
+            height: 14rem;
+            background-image: url("../assets/Rectangle\ 16.png");
+          }
+  
+          .content {
+            margin-left: 3rem;
+            width: 57.8rem;
+            .headline-foryou {
+              height: 4.8rem;
+              width: inherit;
+              @include font-Montserrat;
+              font-weight: 700;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              color: $homepage-headings-color;
+            }
+            .summary-foryou {
+              height: 4.4rem;
+              width: inherit;
+              @include font-HindMadurai;
+              font-weight: 400;
+              font-size: 1.6rem;
+              line-height: 2.2rem;
+              color: $homepage-headings-color;
+              opacity: 0.8;
+              margin-top: 1.6rem;
+            }
+            .day-status-foryou {
+              width: 6.1rem;
+              height: 1.7rem;
+              @include font-HindMadurai;
+              font-weight: 400;
+              font-size: 1.2rem;
+              line-height: 1.7rem;
+              color: $homepage-headings-color;
+              opacity: 0.7;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .quickbytes {
+      height: 38rem;
+      width: 30.5rem;
+      background-color: $quickbytes-background-color;
+      border-radius: 1.2rem;
+      margin-left: 4.3rem;
+      .quickbytes-content {
+        @include display-flex(column);
+        .quickbytes-heading {
+          width: 26.873rem;
+          height: 2rem;
+          margin: 2rem 2.027rem 0 1.6rem;
+          @include display-flex(row);
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 1.2rem;
+          color: $homepage-headings-color;
+          h2 {
+            @include font-Montserrat;
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $homepage-headings-color;
+          }
+        }
+        .quickbytes-border1 {
+          width: 27.7rem;
+          border: 0.05rem solid $quickbytes-border1;
+          align-self: center;
+          opacity: 0.4;
+        }
+        .quickbytes-headlines-content {
+          @include display-flex(column);
+          .quickbytes-headlines {
+            @include display-flex(row);
+            align-items: center;
+            width: 26.1rem;
+            margin: 2.4rem 2.8rem 0 1.6rem;
+            padding-bottom: 1.4rem;
+            @include font-Montserrat;
+            color: $homepage-headings-color;
+            font-weight: 500;
+            h2 {
+              height: 2.4rem;
+              width: 1.2rem;
+              font-size: 2rem;
+              line-height: 2.4rem;
+              margin-right: 1.6rem;
+            }
+            p {
+              height: 3.4rem;
+              width: 23.3rem;
+              font-size: 1.4rem;
+              line-height: 1.7rem;
+            }
+          }
+        }
+        .quickbytes-border2 {
+          opacity: 0.4;
+          border: 0.5px solid $quickbytes-border2;
+          width: 27.7rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+}  
+///////////////////////////////////////////////////////////////////////
+///Sports-category
+////////////////////////////////////////////////////////
+.container-categories{
+  width:144rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .outercontainer-category {
+    width: 100%;
+    height: 36rem;
+    margin:0rem 11.85rem 5rem 11.85rem;
+
+    .heading-category {
+      @include display-flex(row);
+      align-items: center;
+      h2 {
+        height: 2.9rem;
+        @include font-Montserrat;
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        color: $homepage-headings-color;
+        margin-right: 1.252rem;
+      }
+    }
+    .innercontainer-category {
+      @include display-flex(row);
+      .innersubcontainer11{
+        background: url("../assets/Rectangle\ 13.png");
+      }
+      .innersubcontainer12{
+        background: url('../assets/Rectangle2.png');
+      }
+      .innersubcontainer-1 {
+        margin-top: 2.4rem;
+        width: 48.8rem;
+        height: 30.7rem;
+        @include display-flex(column);
+        
+        .inneremptysubcontainer {
+          height: 12.8rem;
+        }
+        .innersubcontainer-content{
+          width: inherit;
+          height: 17.9rem;
+          border-radius: 1.2rem;
+        }
+        .innersubcontainer-content1{
+          background: linear-gradient(
+            180deg,
+            rgba(252, 106, 71, 0) 12.47%,
+            #fc6a47 100%
+          );
+        }
+        .innersubcontainer-content2{
+          background: linear-gradient(180deg, rgba(23, 21, 24, 0) 12.47%, #161618 100%);
+        }
+        
+        .innercontent-category {
+          height: 9.5rem;
+          width: 44.8rem;
+          margin-top: 6.8rem;
+          margin-left: 1.6rem;
+          .innercontent-category-headline {
+            width: inherit;
+            @include font-Montserrat;
+            font-weight: 800;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: $innercontent-category-headline;
+            margin-bottom: 0.8rem;
+          }
+          .innercontent-category-status {
+            @include font-Montserrat;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: $innercontent-category-headline;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .innersubcontainer2 {
+      width: 67.2rem;
+      height: 30.7rem;
+      margin-top: 2.4rem;
+      margin-left: 4rem;
+      .innersubchildcontainer {
+        width: inherit;
+        height: 14rem;
+        @include display-flex(row);
+        margin-bottom: 2.7rem;
+  
+        .imgsubchildcontainersubimg1{
+          background: url("../assets/Rectangle.png");
+        }
+        .imgsubchildcontainersubimg2{
+          background: url('../assets/Rectangle3.png');
+        }
+        .imgsubchildcontainersubimg3{
+          background: url('../assets/Rectangle4.png');
+        }
+        .imgsubchildcontainersubimg4{
+          background: url('../assets/Rectangle5.png');
+        }
+        .innersubchildcontainerimg1 {
+          width: 19.2rem;
+          height: inherit;
+        }
+        .innersubchildcontainerimg2 {
+          width: 19.2rem;
+          height: inherit;
+        }
+        .innersubchildcontainercontent {
+          @include display-flex(column);
+          width: 45.6rem;
+          margin-left: 2.4rem;
+          height: 4.8rem;
+          .innersubchildcontainerheadline {
+            width: inherit;
+            height: inherit;
+            margin-bottom: 1.6rem;
+            @include font-Montserrat;
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: $homepage-headings-color;
+          }
+          .innersubchildcontainersummary {
+            width: inherit;
+            height: 4.4rem;
+            @include font-HindMadurai;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $homepage-headings-color;
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+          }
+          .innersubchildcontainerstatus {
+            height: 1.7rem;
+            @include font-HindMadurai;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            color: $homepage-headings-color;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+}
 }
