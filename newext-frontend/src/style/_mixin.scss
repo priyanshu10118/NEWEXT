@@ -3,3 +3,16 @@
     justify-content: center;
     align-items: center;   
 }
+//for-you mixin
+@mixin font-Montserrat(){
+    font-family: "Montserrat";
+    font-style: normal;
+}
+@mixin font-HindMadurai(){
+    font-family: "Hind Madurai";
+    font-style: normal;
+}
+@mixin display-flex($direction){
+    display: flex;
+    flex-direction: $direction;
+}

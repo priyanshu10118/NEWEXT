@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700&family=Poppins:wght@300;500;600;700;800&family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,700&family=Poppins:wght@300;500;600;700;800&family=Rancho&display=swap");
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContainer {
+  display: flex;
+  order: 1;
+  width: 50%;
+  height: 100vh;
+}
+/* .mainHeader {
+  position: absolute;
+  width: 206px;
+  height: 51px;
+  left: 120px;
+  top: 36px;
+} */
+
+.mainHeader img {
+  position: absolute;
+  width: 206px;
+  height: 51px;
+  left: 120px;
+  top: 36px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 42.1323px;
+  line-height: 51px;
+
+  color: #1b1425;
+}
+
+.textHeader {
+  position: absolute;
+  height: 88px;
+  width: 516px;
+  left: 120px;
+  top: 191px;
+  border-radius: 0;
+}
+
+.textHeader p {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.textContent {
+  position: absolute;
+  height: 99px;
+  width: 506px;
+  left: 120px;
+  top: 327px;
+  border-radius: nullpx;
+}
+
+.textContent p {
+  font-family: Hind Madurai;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.signin {
+  position: absolute;
+  height: 75px;
+  width: 488px;
+  left: 120px;
+  top: 530px;
+  background: #a66df8;
+  border-radius: 12px;
+}
+.signinButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+.signup {
+  position: absolute;
+  height: 20px;
+  width: 263px;
+  left: 232px;
+  top: 610px;
+  border-radius: nullpx;
+}
+
+.signup p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.signup p a {
+  text-decoration: none;
+  color: #a66df8;
+}
+
+.rightContainer {
+  display: flex;
+  order: 2;
+  background-color: #cabae21a;
+  width: 50%;
+  height: 100vh;
+}
+
+.rightContainer img {
+  position: relative;
+  height: 464.5px;
+  width: 492.5px;
+  left: 135.1px;
+  top: 165.82px;
+  border-radius: 0px;
+}

@@ -4,7 +4,8 @@ import HeroCarousel from "./homepage/HeroCarousel"
 import WeatherLoc from "./homepage/WeatherLoc";
 import Navbar from "./homepage/Navbar";
 import StockMarketToday from "./homepage/StockMarketToday";
-
+import Foryou from "./homepage/for-you content/Foryou";
+import Categories from "./homepage/Categories/Categories";
 export default function Homepage() {
   return (
     <div>
@@ -21,6 +22,8 @@ export default function Homepage() {
           <StockMarketToday />
         </div>
       </div>
+      <Foryou />
+      <Categories />
     </div>
   )
 }
