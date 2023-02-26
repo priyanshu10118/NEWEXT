@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "./homepage/Header"
-import HeroCarousel from "./homepage/HeroCarousel"
-import WeatherLoc from "./homepage/WeatherLoc";
-import Navbar from "./homepage/Navbar";
-import StockMarketToday from "./homepage/StockMarketToday";
+import Header from "./homepage/Header/Header"
+import HeroCarousel from "./homepage/HeroCarousel/HeroCarousel"
+import WeatherLoc from "./homepage/Weather/WeatherLoc";
+import Navbar from "./homepage/Navbar/Navbar";
+import StockMarketToday from "./homepage/StockMarket/StockMarketToday";
 import Foryou from "./homepage/for-you content/Foryou";
 import Categories from "./homepage/Categories/Categories";
 export default function Homepage() {
