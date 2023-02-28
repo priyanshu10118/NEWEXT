@@ -1,6 +1,7 @@
 import React from "react";
 import Innersubcontainerforyou from "./inner-sub-conatiner";
 import Quickbytes from "./quickbytes";
+import "./Style/foryou.css"
 function Foryou() {
   return (
     <div className="container-foryou">
