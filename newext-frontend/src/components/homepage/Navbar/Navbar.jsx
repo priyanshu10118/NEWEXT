@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './navbar.css'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
 
 export default function Navbar() {
