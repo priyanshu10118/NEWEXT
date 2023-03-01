@@ -1,4 +1,5 @@
 import React from "react";
+import './weatherLoc.css'
 import { ChevronRightIcon, SunIcon } from "@heroicons/react/24/outline"
 
 export default function WeatherLoc() {
