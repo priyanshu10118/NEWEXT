@@ -1,0 +1,73 @@
+.carousel {
+    width: 85rem;
+    height: 51rem;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1.2rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 52.5%;
+    align-items: flex-end;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    text-align: left;
+    left: 5%;
+    bottom: 5%;
+    z-index: 200;
+}
+
+.carousel-caption h3 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 2.8rem; 
+    margin-bottom: 1.8rem;
+}
+
+.carousel-caption p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2rem;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-gradient-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    height: 30vh;
+    width: 100%;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background-image: linear-gradient(to top, #9a5af9 2%,transparent);
+}

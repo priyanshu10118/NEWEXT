@@ -1,5 +1,6 @@
 import React from "react";
 import Category from "./Category";
+import "./Style/Category.css"
 function Categories() {
   return (
     <div>

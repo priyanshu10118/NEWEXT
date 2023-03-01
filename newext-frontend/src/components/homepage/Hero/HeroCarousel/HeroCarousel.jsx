@@ -1,4 +1,5 @@
 import React from 'react'
+import './heroCarousel.css'
 import { Carousel } from 'react-bootstrap';
 
 export default function HeroCarousel() {
@@ -9,12 +10,12 @@ export default function HeroCarousel() {
                 <Carousel.Item interval={2000} key={index}>
                     <img
                         src={element.img}
-                        alt="First slide"
+                        alt=`Slide ${index+1}`
                     />
                     <Carousel.Caption>
                         <h3>{element.title}</h3>
                         <p>{element.description}</p>
-                        <a href="">Read more...</a>
+                        <a href="#">Read more...</a>
                     </Carousel.Caption>
                 </Carousel.Item>
             })} */}
@@ -26,7 +27,7 @@ export default function HeroCarousel() {
             <Carousel.Caption>
             <h3>Pelé: 1940 - 2022</h3>
             <p>Edson Arantes do Nascimento, or Pelé as the football world would worship him, wrote history with his FIFA World Cup accomplishments.</p>
-            <a href="https://www.linkedin.com/in/pratayroy/">Read more...</a>
+            <a href="#">Read more...</a>
             </Carousel.Caption>
             <div className="carousel-gradient-container"></div>
         </Carousel.Item>
@@ -37,7 +38,7 @@ export default function HeroCarousel() {
             <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="https://www.linkedin.com/in/pratayroy/">Read more...</a>
+            <a href="#">Read more...</a>
             </Carousel.Caption>
             <div className="carousel-gradient-container"></div>
         </Carousel.Item>
@@ -49,7 +50,7 @@ export default function HeroCarousel() {
             <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            <a href="https://www.linkedin.com/in/pratayroy/">Read more...</a>
+            <a href="#">Read more...</a>
             </Carousel.Caption>
             <div className="carousel-gradient-container"></div>
         </Carousel.Item>

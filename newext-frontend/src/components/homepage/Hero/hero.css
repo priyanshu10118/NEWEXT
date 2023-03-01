@@ -1,0 +1,11 @@
+.section-hero {
+    display: flex;
+    padding: 2.4rem 12rem;
+    gap: 3.9rem;
+}
+
+.section-hero--right {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
