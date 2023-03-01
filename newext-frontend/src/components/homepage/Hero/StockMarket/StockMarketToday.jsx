@@ -1,4 +1,5 @@
 import React from "react";
+import './stockMarket.css'
 import StockMarketTabs from "./StockMarketTabs";
 import { ArrowForwardIos } from "@mui/icons-material";
 

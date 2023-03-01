@@ -1,4 +1,5 @@
 import React from "react";
+import './stockMarket.css'
 import { Apple, PlayArrow } from "@mui/icons-material";
 
 export default function StockMarketTabs(props) {
