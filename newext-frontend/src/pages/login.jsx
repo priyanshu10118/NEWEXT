@@ -77,7 +77,7 @@ const Login = () => {
             withCredentials: true,
           });
           if (resp.data.user) {
-            alert("Signin Successfull ", resp.data.fname);
+            console.log("Signin Successfull ", resp.data.fname);
           } else {
             alert("Invalid credentials");
           }
