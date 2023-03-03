@@ -32,7 +32,7 @@ const Header = () => {
       <>
       <div className="header-container">
         <div className="header-logo-container">
-          <img src="https://i.postimg.cc/htmNRqtz/newext-logo.png" className="newext-logo" alt="newext-logo" />
+          <img src="https://i.postimg.cc/MGKxv5LF/logo-1.png' border='0' alt='logo-1'" className="newext-logo" alt="newext-logo" />
         </div>
         <div className="search-and-account-container">
           <div className="search-bar-container">
