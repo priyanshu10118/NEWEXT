@@ -1,19 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 62.5%;
-}
 
 .header-container {
     display: flex;
     padding: 4.2rem 12.5rem 0 12.5rem;
-    margin: auto;
+    /* margin: auto; */
     justify-content: space-between;
-    width: 100vw;
-    /* max-width: 1440px; */
+    width: 144rem;
   }
   .header-container .header-logo-container {
     font-weight: 900;
@@ -53,8 +45,10 @@
     color: #FFF;
     cursor: pointer;
     background: none;
+    border: none;
+    opacity: 1;
   }
-  .search-button:hover{
+  .search-button:hover {
     background-color: #5e06e2;
   }
   .header-container .search-and-account-container .search-bar-container form input[type=text] {
@@ -65,6 +59,8 @@
     min-width: 15rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     padding-left: 1rem;
     outline: none;
   }
