@@ -51,12 +51,11 @@
   .search-button:hover {
     background-color: #5e06e2;
   }
-  .header-container .search-and-account-container .search-bar-container form input[type=text] {
+  .header-container .search-and-account-container .search-bar-container form input[type=search] {
     font-size: 1.4rem;
     border: 1px solid rgba(0, 0, 0, 0.25);
     width: 17vw;
     height: 4.1rem;
-    min-width: 15rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     border-top-left-radius: 0;
@@ -102,4 +101,57 @@
   .header-container .search-and-account-container .my-account:hover i{
     color: #FFF;
   }
+
+  .search-input-container .search-filter ul {
+    position: fixed;
+    /* background-color:red;  */
+  }
   
+  .search-input-container .search-filter {
+    position: fixed;
+    z-index: 1000;
+    margin-top: .5rem;
+  }
+  .search-input-container .search-filter .items-search {
+    padding-left: 2rem;
+    list-style-type: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: none;
+    border-top: none;
+    background-color: #fff;
+    width: 17vw;
+  }
+  .search-input-container .search-filter .items-search a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3e3e3e; 
+    
+  }
+
+  .search-input-container .search-filter div:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .search-input-container .search-filter div:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .hide {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1440px) {
+  .header-container .search-and-account-container .search-bar-container form input[type=search] {
+    width: 20vw;
+  }
+  .search-input-container .search-filter .items-search {
+    width: 20vw;
+  }
+  }
