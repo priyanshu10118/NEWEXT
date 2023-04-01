@@ -28,32 +28,49 @@
     display: flex;
     flex-direction: row;
   }
-  .container-categories .outercontainer-category .innercontainer-category .innersubcontainer11 {
+  /* .container-categories .outercontainer-category .innercontainer-category .innersubcontainer11 {
     background: url("../../../../assets/Rectangle 13.png");
   }
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer12 {
     background: url("../../../../assets/Rectangle2.png");
-  }
+  } */
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 {
     margin-top: 2.4rem;
     width: 48.8rem;
     height: 30.7rem;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
-  .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .inneremptysubcontainer {
+  .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 img{
+    width:48.8rem;
+    height:30.7rem;
+    border-radius: 1.2rem;
+  }
+
+  /* .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .inneremptysubcontainer {
     height: 12.8rem;
-  }
+  } */
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .innersubcontainer-content {
     width: inherit;
     height: 17.9rem;
     border-radius: 1.2rem;
+    /* chnages  done */
+    position:absolute;
+    top:12.8rem;
+    /* background: linear-gradient(180deg, rgba(23, 21, 24, 0) 12.47%, #161618 100%); */
+    /* chnages end */
+
+
   }
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .innersubcontainer-content1 {
     background: linear-gradient(180deg, rgba(252, 106, 71, 0) 12.47%, #fc6a47 100%);
   }
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .innersubcontainer-content2 {
     background: linear-gradient(180deg, rgba(23, 21, 24, 0) 12.47%, #161618 100%);
+  }
+  .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .innersubcontainer-content3{
+    background: linear-gradient(179.5deg, rgba(202, 186, 226, 0.14) 9.02%, #9A5AF9 95.24%);
   }
   .container-categories .outercontainer-category .innercontainer-category .innersubcontainer-1 .innercontent-category {
     height: 9.5rem;
@@ -93,10 +110,17 @@
     flex-direction: row;
     margin-bottom: 2.7rem;
   }
-  .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg1 {
-    background: url("../../../../assets/Rectangle.png");
+  /* changes done */
+  .innersubchildcontainerimg img{
+    height:14rem;
+    width:19.2rem;
+    border-radius: 0.7rem;
   }
-  .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg2 {
+  /* changes end here */
+  /* .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg1 {
+    background: url("../../../../assets/Rectangle.png");
+  } */
+  /* .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg2 {
     background: url("../../../../assets/Rectangle3.png");
   }
   .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg3 {
@@ -104,15 +128,15 @@
   }
   .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .imgsubchildcontainersubimg4 {
     background: url("../../../../assets/Rectangle5.png");
-  }
-  .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .innersubchildcontainerimg1 {
+  } */
+  /* .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .innersubchildcontainerimg1 {
     width: 19.2rem;
     height: inherit;
   }
   .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .innersubchildcontainerimg2 {
     width: 19.2rem;
     height: inherit;
-  }
+  } */
   .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .innersubchildcontainercontent {
     display: flex;
     flex-direction: column;
@@ -141,7 +165,7 @@
     line-height: 2.2rem;
     color: #1B1425;
     opacity: 0.8;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
   }
   .container-categories .outercontainer-category .innersubcontainer2 .innersubchildcontainer .innersubchildcontainercontent .innersubchildcontainerstatus {
     height: 1.7rem;
@@ -152,4 +176,5 @@
     line-height: 1.7rem;
     color: #1B1425;
     opacity: 0.7;
+    padding-top:0.5rem;
   }

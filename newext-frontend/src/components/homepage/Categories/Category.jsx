@@ -20,9 +20,19 @@ function category(props) {
         </svg>
       </div>
       <div className="innercontainer-category">
-        <div className={`innersubcontainer-1  innersubcontainer1${props.Index}`}>
+        {/* previous code */}
+        {/* <div className={`innersubcontainer-1  innersubcontainer1${props.Index}`}>
           <div className="inneremptysubcontainer"></div>
           <div className={`innersubcontainer-content innersubcontainer-content${props.gradientIndex}`}>
+            <div className="innercontent-category">
+              <h2 className="innercontent-category-headline">{props.imgHeadline}</h2>
+              <p className="innercontent-category-status">{props.imgStatus}</p>
+            </div>
+          </div>
+        </div> */}
+        <div className={`innersubcontainer-1`}>
+          <img src={props.imageUrl} alt="newsimage"/>
+          <div className={`innersubcontainer-content innersubcontainer-content${props.Index}`}>
             <div className="innercontent-category">
               <h2 className="innercontent-category-headline">{props.imgHeadline}</h2>
               <p className="innercontent-category-status">{props.imgStatus}</p>
@@ -31,20 +41,13 @@ function category(props) {
         </div>
         <div className="innersubcontainer2">
           <Innersubchildcontainer
-          subchildIndex={props.subchildkey}
-          img1Index={props.img1key}
-          //imgsubchildcontainerimg1 -->imgsubchildcontainerimg1
-          //imgsubchildcontainerimg2->imgsubchildcontainerimg3
-        //   img2Index={props.img2key} 
+          subchildImageUrl={props.subchild1ImageUrl}
           subchildHeadline={props.subchild1Headline}
           subchildSummary={props.subchild1Summary}
           subchildStatus={props.subchild1Status} />
           <Innersubchildcontainer
           subchildIndex={props.subchildkey}
-        //   img1Index={props.img1key}
-          img2Index={props.img2key}  
-          //imgsubchildcontainerimg1 -->imgsubchildcontainerimg2
-          //imgsubchildcontainerimg2->imgsubchildcontainerimg4
+          subchildImageUrl={props.subchild2ImageUrl}  
           subchildHeadline={props.subchild2Headline}
           subchildSummary={props.subchild2Summary}
           subchildStatus={props.subchild2Status} />
