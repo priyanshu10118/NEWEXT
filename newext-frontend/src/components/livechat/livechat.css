@@ -1,0 +1,136 @@
+.chat-wrapper {
+    width: 39rem;
+    height: 57.8rem;
+    background-color: rgba(202,186,226, 0.3);
+    border-radius: 12px;
+    padding-top: 24px; 
+    position: relative;
+}
+
+.chat-wrapper_heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #1B1425;
+    margin-bottom: 12px;
+}
+
+.chat-wrapper h1, .chats-container {
+    padding: 0 26px;
+}
+
+.chat-wrapper hr {
+    color: black;
+    opacity: 1;
+    width: 90%;
+    margin: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.individual-chat {
+    width: 100%;
+    display: flex;
+}
+
+.user-logo {
+    width: 30px;
+    height: 30px;
+    background-color: #ae83ee;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.username-chat_container {
+    padding-left: 12px;
+    font-family: sans-serif;
+}
+
+.username, .user-chat {
+    font-size: 14px;
+}
+
+.username-chat_container p span {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.chat-input_wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.chat-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-tools {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid #CABAE2;
+    border-top: none;
+    padding-bottom: 1rem;
+}
+
+.input-tools button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    background-color: #a66df8;
+    margin-right: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.input-tools button span i {
+    margin-left: 1rem;
+}
+
+
+.input-tools .emojis {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 17px;
+}
+
+.input-tools .emojis i {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.input-tools .emojis i:hover {
+    opacity: .7;
+}
+.chat-input textarea {
+    width: 100%;
+    height: 83px;
+    font-size: 1.2rem;
+    border: 0.5px solid #CABAE2;
+    border-bottom: none;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    padding: 1rem;
+    resize: none;
+    padding-left: 17px;
+}
+
+.chat-input textarea:focus {
+    outline: none;
+}
+
+
