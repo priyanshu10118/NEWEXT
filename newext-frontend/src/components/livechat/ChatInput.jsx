@@ -3,23 +3,6 @@ import { Picker } from "emoji-mart";
 import './livechat.css'
 
 const ChatInput = ({placeholder}) => {
-    // const [value, setValue] = useState()
-
-    const inputField = document.getElementById("input-area");
-
-    function emojisPicker() {
-    // Create the emoji picker
-    const picker = new Picker({
-        onSelect: (emoji) => {
-        // Insert the selected emoji into the input field
-        inputField.value += emoji.native;
-        },
-    });
-
-    // Open the emoji picker
-    picker.showPicker(inputField);
-    };
-
 
   return (
        <>
