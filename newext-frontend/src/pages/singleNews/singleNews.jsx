@@ -121,7 +121,7 @@ const SingleNews = ({}) => {
           </div>
           <div className="news-body">
             {splitSenteces.map(sent => {
-              return(<p>{sent}</p>)
+              return(<p key={sent}>{sent}</p>)
             })}
           </div>
         </div>

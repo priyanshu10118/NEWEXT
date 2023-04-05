@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Picker } from "emoji-mart";
 import './livechat.css'
 
 const ChatInput = ({placeholder}) => {
@@ -15,7 +14,7 @@ const ChatInput = ({placeholder}) => {
                     </textarea>
                     <div className="input-tools">
                         <div className="emojis">
-                            <i className='fa fa-smile-o' onClick={emojisPicker}></i>
+                            <i className='fa fa-smile-o' ></i>
                             <i className='fa fa-bold'></i>
                             <i className='fa fa-italic'></i>
                             <i className='fa fa-quote-right'></i>
