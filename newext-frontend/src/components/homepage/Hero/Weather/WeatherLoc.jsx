@@ -52,7 +52,6 @@ export default function WeatherLoc() {
           <SunIcon className="weatherloc-icon--weather" />
         </div>
       </div>
-         
     </div>
   );
 }
