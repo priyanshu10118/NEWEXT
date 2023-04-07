@@ -1,60 +1,35 @@
-import React from 'react'
-import './heroCarousel.css'
-import { Carousel } from 'react-bootstrap';
+import React, { useEffect, useState } from "react";
+import "./heroCarousel.css";
+import { Carousel } from "react-bootstrap";
+import axios from "axios";
 
 export default function HeroCarousel() {
+  const [dataCarousel, setdataCarousel] = useState();
+  useEffect(() => {
+    const fnc = async () => {
+      const { data } = await axios.get(
+        `http://localhost:9876/news/getnews?lang=en&category=sports`
+      );
+      setdataCarousel(data.result);
+    };
+    fnc();
+  }, []);
+
   return (
-    <div> 
-        <Carousel fade className='carousel-mask'>
-            {/* {dataCarousel.map((element, index) => {
-                <Carousel.Item interval={2000} key={index}>
-                    <img
-                        src={element.img}
-                        alt=`Slide ${index+1}`
-                    />
-                    <Carousel.Caption>
-                        <h3>{element.title}</h3>
-                        <p>{element.description}</p>
-                        <a href="#">Read more...</a>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            })} */}
-        <Carousel.Item interval={3000}>
-            <img
-            src="https://i.postimg.cc/W4ZfgZHX/Getty-Images-900481092.jpg"
-            alt="First slide"
-            />
+    <div>
+      <Carousel fade className="carousel-mask">
+        {dataCarousel?.slice(0, 5).map((e, index) => (
+          <Carousel.Item interval={3000}>
+            <img src={e.image} alt="First slide" />
             <Carousel.Caption>
-            <h3>Pelé: 1940 - 2022</h3>
-            <p>Edson Arantes do Nascimento, or Pelé as the football world would worship him, wrote history with his FIFA World Cup accomplishments.</p>
-            <a href="#">Read more...</a>
+              <h3>{e.title}</h3>
+              <p>{e.content}</p>
+              <a href={e.readMore}>Read more...</a>
             </Carousel.Caption>
             <div className="carousel-gradient-container"></div>
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-            <img
-            src="https://i.postimg.cc/pVYb3GbY/img2.jpg"
-            />
-            <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">Read more...</a>
-            </Carousel.Caption>
-            <div className="carousel-gradient-container"></div>
-        </Carousel.Item>
-        <Carousel.Item interval={3000}>
-            <img
-            src="https://i.postimg.cc/T1czmwqH/img5.jpg"
-            alt="Third slide"
-            />
-            <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            <a href="#">Read more...</a>
-            </Carousel.Caption>
-            <div className="carousel-gradient-container"></div>
-        </Carousel.Item>
-        </Carousel>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </div>
   );
 }
