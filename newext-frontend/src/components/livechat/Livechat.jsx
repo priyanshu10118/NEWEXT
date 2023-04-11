@@ -37,6 +37,9 @@ const Livechat = () => {
                 <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
                 <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
                 <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
+                <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
+                <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
+                <Chat username={ username } chat={ userchat } profilePicture={ profilePicture }/>
             </div>
             <div className="chat-input_wrapper">
                 <ChatInput placeholder="Say something..."/>
