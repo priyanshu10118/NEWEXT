@@ -61,6 +61,7 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding-left: 1rem;
+    padding-right: 1rem;
     outline: none;
   }
   .header-container .search-and-account-container .search-bar-container form input::-moz-placeholder {
