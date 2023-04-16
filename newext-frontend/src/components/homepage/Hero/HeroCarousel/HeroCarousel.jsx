@@ -23,8 +23,10 @@ export default function HeroCarousel() {
             <img src={e.image} alt="First slide" />
             <Carousel.Caption>
               <h3>{e.title}</h3>
-              <p>{e.content}</p>
-              <a href={e.readMore}>Read more...</a>
+              <p>
+                {e.content.slice(0, 200)}...
+                <a href={e.readMore}>Read more</a>
+              </p>
             </Carousel.Caption>
             <div className="carousel-gradient-container"></div>
           </Carousel.Item>
