@@ -231,6 +231,14 @@
     margin-top: 32px;
     margin-bottom: 3rem;
     cursor: pointer;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+}
+
+.view-comment span i {
+    font-size: 18px;
+    margin-left: 5px;
 }
 
 .username-container {

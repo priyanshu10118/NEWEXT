@@ -27,8 +27,8 @@ function splitString(str) {
   const firstSubstring =
     str.slice(0, periodIndices[1] + 1) +
     str.slice(periodIndices[2] + 1, periodIndices[3] + 1);
-  const secondSubstring = str.slice(periodIndices[1] + 1, periodIndices[2] + 1);
-  const thirdSubstring = str.slice(periodIndices[3] + 1);
+    const secondSubstring = str.slice(periodIndices[1] + 1, periodIndices[2] + 1);
+    const thirdSubstring = str.slice(periodIndices[3] + 1);
 
   return [firstSubstring, secondSubstring, thirdSubstring];
 }
@@ -79,7 +79,7 @@ function CommentReply({ username, time, comment, like }) {
 
 const SingleNews = ({}) => {
   const [copy, setCopy] = useState(false);
-  // const [comment, setComment] = useState(false)
+  const [comment, setComment] = useState(false);
 
   // share the news and copy link content
   let copyText;
@@ -97,7 +97,6 @@ const SingleNews = ({}) => {
 
   // calling splitSentences function to use in map function to display the paragraphs
   const splitSenteces = splitString(oneNews.content);
-  console.log("splitsentecs", splitSenteces);
 
   return (
     <>
@@ -172,29 +171,38 @@ const SingleNews = ({}) => {
           <button id="comment-post">Post</button>
         </div>
         <div className="users-comment_container">
-          <div className="view-comment" onClick={(e) => setComment(true)}>
-            View all comments <i className="fa fa-angle-down"></i>
+          <div className="view-comment" onClick={(e) => setComment(!comment)}>
+            View all comments 
+            <span>
+              {!comment ? (
+                <i className="fa fa-angle-down"></i>
+              ): (
+                <i className="fa fa-angle-up"></i>
+              )}
+            </span>
           </div>
-          <div className="user-comment_container">
-            <UserComment
-              username="manishmh"
-              time="20 mins ago"
-              comment="Andretti would do miles better tha williams with better facilites and backing to improve them."
-              like="12"
-            />
+          <UserComment
+            username="manishmh"
+            time="20 mins ago"
+            comment="Andretti would do miles better tha williams with better facilites and backing to improve them."
+            like="12"
+          />
             <CommentReply
               username="to the moon"
               time="10 mins ago"
               comment="manish build this comment section including every post in here."
               like="2"
             />
-            <UserComment
-              username="to the moon"
-              time="10 mins ago"
-              comment="manish build this comment section including every post in here."
-              like="2"
-            />
-          </div>
+          {comment && (
+            <div className="user-comment_container">
+              <UserComment
+                username="to the moon"
+                time="10 mins ago"
+                comment="manish build this comment section including every post in here."
+                like="2"
+              />
+            </div>
+          )}
         </div>
       </div>
       <Footer />

@@ -42,6 +42,7 @@ const SearchBar = () => {
         <div className="search-input-container">
           <input type="search" placeholder="Search..." id='search'
             value={ query } 
+            autoComplete='off'
             onChange={e => setQuery(e.target.value)} 
           />
           <div className="search-filter" id='search-filter'>
